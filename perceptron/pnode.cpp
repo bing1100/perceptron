@@ -25,6 +25,29 @@ pnode::~pnode() {
 
 }
 
+//  copy constructor
+pnode::pnode(pnode * node) :
+	
+	lvl(node->lvl),
+	max(node->max)
+
+{
+
+	// Deep copy weights
+	weight = new long[max];
+	cWeight = new long[max];
+
+	for (int i = 0; i < max; i++) {
+
+
+		weight[i] = node->weight[i];
+		cWeight[i] = node->cWeight[i];
+
+	}
+
+
+}
+
 // TODO: Depending on mode change how the values are initialized
 void pnode::init(int mode) {
 

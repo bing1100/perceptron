@@ -75,9 +75,11 @@
     <Text Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="averagePerceptron.h" />
     <ClInclude Include="pnode.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="averagedPerceptron.cpp" />
     <ClCompile Include="pnode.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

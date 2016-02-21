@@ -25,6 +25,16 @@ averagedPerceptron::~averagedPerceptron() {
 
 }
 
+// copy constructor
+// input: averagePerceptron object to be copied
+// output: NA
+averagedPerceptron::averagedPerceptron(averagedPerceptron * perceptron) {
+
+	// Deep copy over the wNode object
+	wNode = new pnode(perceptron->wNode);
+
+}
+
 /// Training functions
 
 // singleTrain trains wNode with the parameter array for the first numFeatures features
@@ -32,10 +42,10 @@ averagedPerceptron::~averagedPerceptron() {
 // ouput: NA
 void averagedPerceptron::singleTrain(long * arrlong) {
 
-	// Store the true value of the featues
+	// Store the true value of the features
 	int y = arrlong[0];
 
-	// Running sum to calculate dot product of w*featues
+	// Running sum to calculate dot product of w*features
 	int wx;
 
 	// Calculate the dot product

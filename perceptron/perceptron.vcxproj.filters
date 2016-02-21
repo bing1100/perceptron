@@ -21,9 +21,15 @@
     <ClInclude Include="pnode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="averagePerceptron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pnode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="averagedPerceptron.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

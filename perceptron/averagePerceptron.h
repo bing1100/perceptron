@@ -18,6 +18,7 @@ public:
 	/// constructor and destructor
 	averagedPerceptron(int numFeatures);
 	~averagedPerceptron();
+	averagedPerceptron(averagedPerceptron * perceptron);
 
 	/// Training tools/modes
 	void arrayTrain(long ** arrarrlong, int len);

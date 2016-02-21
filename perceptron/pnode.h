@@ -1,7 +1,5 @@
 #pragma once
 
-#include <array>
-
 /*
 Implementation of averaged perceptron node
 */
@@ -28,6 +26,7 @@ public:
 	/// Constructor and destructor
 	pnode(int lvl, int max);
 	~pnode();
+	pnode(pnode * node);
 
 	/// Initialization mode
 	void init(int mode);
